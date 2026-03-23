@@ -20,8 +20,7 @@ HTML = """
 # ------------------------
 @app.route("/", methods=["GET", "POST"])
 def index():
-    resposta = ""
-
+    return "Painel BlackMage online"
     if request.method == "POST":
         acao = request.form.get("acao")
 
